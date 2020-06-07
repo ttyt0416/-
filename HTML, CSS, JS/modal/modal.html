@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modal.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+</head>
+<body>
+    <nav class="aside">
+        <div class="logo">
+          <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="user" />
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+        <div class="top">
+            <button class="bar">
+                <i class="fas fa-bars"></i>
+            </button>
+            <h1>My Landing Page</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, amet!</p>
+            <button class="signUp">Sign Up</button>
+        </div>
+        <div class="ipsum">
+            <h3>What is this landing page about?</h3>
+            <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+                literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+                College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+                going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes
+                from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,
+                written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first
+                line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            </p>
+            <h3>Tell Me More</h3>
+            <p>
+                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and
+                1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by
+                English versions from the 1914 translation by H. Rackham.
+            </p>
+            <h3>Benefits</h3>
+            <ul>Lifetime Access</ul>
+            <ul>30 Day Money Back</ul>
+            <ul>Tailored Customer Support</ul>
+            <p>Lorem ipsum dolor sit amet consecteur, adipisicing elit. Esse quam nonstrum, fugiat, itaque natus officia laborum
+                dolorum id accusantium culpa architecto tenetur fuga? Consequatur provident rerum elus ratione dolor offiis
+                doloremque minima optio dignissimos doloribus odio debitis vero cumque itaque excepturi aneque, expedita nulla earum
+                accusamus replllat adipisci veritatis quam. Ipsum fugiat iusto pariatur consectetur quas libero dolor dolores
+                dolorem, nostrum ducimus doloremque placeat accusamus iste, culpa quaerat consequatur?</p>
+        </div>
+    </div>
+    
+    <div class="modalContainer">
+        <div class="modal">
+            <button class="close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modalHeader">
+                <h3>
+                    Sign Up
+                </h3>
+            </div>
+            <div class="modalContent">
+                <p>Register with us to get offers, support and more</p>
+                <form class="modalForm">
+                    <div>
+                        <label>Name</label>
+                        <input type="text" placeholder="Enter Name" class="formInput">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter Email" class="formInput">
+                    </div>
+                    <div>
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter Password" class="formInput">
+                    </div>
+                    <div>
+                        <label>Confirm Password</label>
+                        <input type="password" placeholder="Confirm Password" class="formInput">
+                    </div>
+                    <input type="submit" value="submit" class="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="modal.js"></script>
+</body>
+</html>

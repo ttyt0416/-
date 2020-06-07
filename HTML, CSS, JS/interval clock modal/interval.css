@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+.image {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: -1;
+   
+}
+
+.image.show {
+    z-index: 1;
+}
+
+.container {
+    position: absolute;
+    color: white;
+    text-align: center;
+    background-color: none;
+    width: 100%;
+    display: block;
+    z-index: 3;
+}
+
+.clock {
+    font-size: 10em;
+}
+
+.btn {
+    font-size: 50px;
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+
+
+.modalContainer{
+    position: fixed;
+    display:none;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.modalContainer.view{
+    display:block;
+}
+
+.modalImage {
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    margin-top: 5%;
+    margin-left: 11%;
+}
+
+.modalImage.appear {
+    z-index: 7;
+}

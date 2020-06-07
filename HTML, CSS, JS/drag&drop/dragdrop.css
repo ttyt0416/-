@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.draglist {
+    list-style-type: none;
+    padding: 0;
+    border: 1px solid lightgray;
+}
+
+
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightslategray;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+}
+
+.draglist li {
+    display:flex;
+    flex: 1;
+}
+
+.draglist li:not(:last-of-type) {
+    border-bottom: lightgray 1px solid;
+}
+
+.draglist .person {
+    margin: 0 20px 0 0;
+}
+
+.draggable {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    flex: 1;
+}
+
+
+.draglist li.over .draggable{
+    background-color: #eaeaea;
+}
+
+.draglist li.right .person{
+    color: lightgreen;
+}
+
+.draglist li.wrong .person {
+    color: darkred;
+}
+
+.checkBtn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: lightgray;
+    border-style: none;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+}
+
+.checkBtn:focus {
+    outline: none;
+}
+
+.checkBtn:active {
+    transform: scale(.98);
+}

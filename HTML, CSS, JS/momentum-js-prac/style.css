@@ -1,0 +1,121 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+
+
+.bgImage1 {
+  background-image: url('https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  animation: fadeIn, .5s linear;
+}
+
+.bgImage2 {
+  background-image: url('https://images.unsplash.com/photo-1530908295418-a12e326966ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80;');
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  animation: fadeIn, .5s linear;
+}
+
+.bgImage3 {
+  background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  animation: fadeIn, .5s linear;
+}
+
+.bgImage4 {
+  background-image: url('https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  animation: fadeIn, .5s linear;
+}
+
+.bgImage5 {
+  background-image: url('https://images.unsplash.com/photo-1456030680012-9aa5bd962cc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  animation: fadeIn, .5s linear;
+}
+
+.bgImage6 {
+  background-image: url('https://images.unsplash.com/12/sun-trees.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  animation: fadeIn, .5s linear;
+}
+
+.form {
+  display: none;
+}
+
+.greeting {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+.container-sm {
+  margin: auto;
+  color: white;
+  text-align: center;
+  padding-top: 5%;
+  font-family: 'Dancing Script';
+}
+
+.toDoInput {
+  text-align: center;
+  color: black;
+  width: 50%;
+  height: 150%;
+  font-size: 2em;
+}
+
+.toDoUl {
+  list-style: none;
+  padding-left: 0px;
+  font-size: 4em;
+}

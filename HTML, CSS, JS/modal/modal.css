@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+body.view {
+    transform: translateX(200px);
+}
+
+
+.aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 200px;
+    transform: translateX(-100%);
+    background-color: #0099FF;
+}
+
+.aside div img {
+    border: none;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 25px;
+    
+}
+
+.aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aside ul li:hover {
+    text-decoration: underline;
+}
+
+
+.aside ul li {
+    border-bottom: 1px skyblue solid;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.aside ul li:first-of-type {
+    padding-top: 20px;
+}
+
+.aside ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.top {
+    text-align: center;
+    background-color: #0099FF;
+    color: white;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.bar {
+    position: absolute;
+    background: transparent;
+    left: 0;
+    top: 0;
+    background-color: white;
+    color: black;
+    border:none;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+
+.signUp {
+    background: transparent;
+    background-color: lightblue;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: white;
+    padding: 10px;
+}
+
+
+.ipsum {
+    text-align: left;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
+.modalContainer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display:none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+
+}
+
+.modal {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    max-width: 100%;
+    margin: 0;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    background-color: white;
+    animation-name: open;
+    animation-duration: 1s;
+}
+
+.modalContainer.view {
+    display: block;
+}
+
+.modalHeader {
+    background-color: #0099FF;
+    padding: 15px;
+}
+
+.modalHeader h3 {
+    margin: 0;
+    color: white;
+}
+
+.modalForm label {
+    display: block;
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+
+.formInput {
+    width: 100%;
+    padding: 8px;
+}
+
+.modalForm div {
+    width: 100%;
+}
+
+.modalContent {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.close {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    font-size: 25px;
+    border: none;
+    padding-top: 3%;
+}
+
+.submit {
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+@keyframes open{
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+};

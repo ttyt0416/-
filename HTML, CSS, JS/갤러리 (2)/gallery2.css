@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    /* background: #44472a4f; */
+    }
+  
+
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+    width: 60%;
+    margin: 0 auto  ;
+    padding-top: 5%;
+  }
+
+  .frame{
+    width: 100%;
+  }
+  .frame img{
+    display: block;
+    margin-left: 7.5%;
+  }
+  .frame_bg{
+    position: absolute;
+    width:75%;
+    z-index: -9999;
+    top: 5.25%;
+    left: 7.5%;
+  }
+  .frame-img1{
+    position: absolute;
+    z-index: 99;
+    width: 20%;
+    margin: 0 auto;
+    top: 27%;
+    left: 5%;
+  }
+  .frame-img2{
+    position: absolute;
+    z-index: 99;
+    width: 20%;
+    margin: 0 auto;
+    top: 42.9%;
+    left: 72%;
+  }
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    width: 95%;
+    padding-bottom: 15%;
+  }
+  .mySlides img{
+    display: block;
+    margin-left: 22.75%;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    /*position: absolute;*/
+    top: 87.5%;
+    /*width: 50%;*/
+    padding: -3%;
+    padding-top: 3%;
+    margin-top: -50px;
+    color: #44472a;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(30, 196, 58, 0.349);
+  }
+  .row{
+    width: 125%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 2.5%;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    width: 20%;
+    margin: 0 0.5%;
+    display: flex;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+    width: 100%;
+    display: block;
+    align-items: center;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }

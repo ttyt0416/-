@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery2.css">
+    <title>gallery</title>
+</head>
+<body>
+    
+    <!-- Container for the image gallery -->
+<div class="container">
+    <div class="frame">
+        <img class="frame_bg" src="bg.png" alt="">
+        <img class="frame-img1" src="galleryframe-1.png" alt="">
+        <img class="frame-img2" src="galleryframe-2.png" alt="">
+    </div>
+      <!-- Full-width images with number text -->
+      <div class="mySlides">
+          <img src="1.jpg" style="width:70%">
+      </div>
+    
+      <div class="mySlides">
+          <img src="2.jpg" style="width:70%">
+      </div>
+    
+      <div class="mySlides">
+          <img src="3.jpg" style="width:70%">
+      </div>
+    
+      <div class="mySlides">
+          <img src="4.jpg" style="width:70%">
+      </div>
+      <!--
+      <div class="mySlides">
+          <img src="1.jpg" style="width:70%">
+      </div>
+    
+      <div class="mySlides">
+          <img src="2.jpg" style="width:70%">
+      </div>
+      -->
+
+    <!-- Next and previous buttons -->
+    
+     
+
+    <!-- Thumbnail images -->
+    <div class="row">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <div class="column">
+        <img class="demo cursor" src="1.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="2.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="3.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+      </div>
+      <!--<div class="column">
+        <img class="demo cursor" src="1.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="2.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+      </div>-->
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  </div>
+
+    <script src="galleryScript2.js"></script>
+</body>
+</html>
