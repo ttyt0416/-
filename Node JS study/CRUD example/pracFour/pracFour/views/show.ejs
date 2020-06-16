@@ -1,0 +1,33 @@
+<%- include("partials/header") %>
+
+<div class="showPostContainer">
+	<div class="showContainer">
+		<div class="showUpper">
+			<img class="showUpperImage" src="<%= item.image %>">
+			<div class="showUpperFormBox">
+				<p><%= item.title %></p>
+				<div class="formBtn">
+					<a class="editBtn" href="/home/<%= item._id %>/edit">EDIT</a>
+					<form class="deleteBtnForm" action="/home/<%= item._id %>?_method=DELETE" method="POST">
+						<button>
+							DELETE
+						</button>	
+					</form>
+				</div>
+			</div>
+		</div>
+			<div class="showBottom">
+				<ul>
+					<li><img src="<%= item.innerImageOne %>"></li>
+					<li><img src="<%= item.innerImageTwo %>"></li>
+					<li><img src="<%= item.innerImageThree %>"></li>
+					<li><img src="<%= item.innerImageFour %>"></li>
+				</ul>
+				<p>
+					<%= item.description %>
+				</p>
+			</div>
+	</div>
+</div>
+
+<%- include("partials/footer") %>

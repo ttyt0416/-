@@ -1,0 +1,19 @@
+<%- include("partials/header") %>
+
+<div class="itemsContainer">
+<% items.forEach(function(item) { %>
+	
+		<div class="items">
+			<a href="/home/<%= item._id %>"><img src="<%= item.image %>"></a>
+			<p>
+				<%= item.title %>
+			</p>
+			<p>
+				<%= item.description.substring(0,50) %>
+			</p>
+		</div>
+	
+<% }) %>
+</div>
+
+<%- include("partials/footer") %>

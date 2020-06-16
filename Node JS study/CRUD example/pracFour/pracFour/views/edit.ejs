@@ -1,0 +1,49 @@
+<%- include("partials/header") %>
+	<div class="postFormContainer">
+		<h1>
+			EDIT POST HERE!
+		</h1>
+		<form class="postForm" action="/home/<%= item._id %>?_method=PUT" method="POST">
+			<div class="labelContainer">
+				<label> Image
+					<input class="image" type="text" name="item[image]" placeholder="image URL" value="<%= item.image %>">
+				</label>
+			</div>
+			<div class="labelContainer">
+				<label> Title
+					<input class="title" type="text" name="item[title]" placeholder="title" value="<%= item.title %>">
+				</label>
+			</div>
+			<div class="labelContainer">
+				<label> Inner Image One
+					<input class="innerImage" type="text" name="item[innerImageOne]" placeholder="inner image ULR" value="<%= item.innerImageOne %>">
+				</label>
+			</div>
+			<div class="labelContainer">
+				<label> Inner Image Two
+					<input class="innerImage" type="text" name="item[innerImageTwo]" placeholder="inner image ULR" value="<%= item.innerImageTwo %>">
+				</label>
+			</div>
+			<div class="labelContainer">
+				<label> Inner Image Three
+					<input class="innerImage" type="text" name="item[innerImageThree]" placeholder="inner image ULR" value="<%= item.innerImageThree %>">
+				</label>
+			</div>
+			<div class="labelContainer">
+				<label> Inner Image Four
+					<input class="innerImage" type="text" name="item[innerImageFour]" placeholder="inner image ULR" value="<%= item.innerImageFour %>">
+				</label>
+			</div>
+			<div class="labelContainer">
+				<label> Description
+					<textarea class="description" type="text" name="item[description]" placeholder="description">
+						<%= item.description %>
+					</textarea>
+				</label>
+			</div>
+			<button class="submitBtn">
+				Submit
+			</button>
+		</form>
+	</div>
+<%- include("partials/footer") %>

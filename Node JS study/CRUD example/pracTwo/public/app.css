@@ -1,0 +1,250 @@
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu {
+	position: fixed;
+	top: 0;
+	background-color: black;
+	height: 50px;
+	width: 100%;
+	z-index: 100;
+	margin-right: 3%;
+}
+
+.menu ul li {
+	list-style-type: none;
+	justify-content: space-between;
+}
+
+
+
+.menu ul li a {
+	text-decoration: none;
+	color: white;
+	float: left;	
+	width: 7%;
+	text-align: center;
+}
+
+.menu ul li a i:hover {
+	cursor: default;
+}
+
+.indexTop {
+	text-align: center;
+	margin-top: 5%;
+}
+
+.indexBox {
+	width: 60%;
+	height: 250px;
+	margin-left: 20%;
+	left: 0;
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+.indexBox h2 {
+	width: 50%;
+	display: block;
+}
+
+.indexBox img {
+	height: 200px;
+	width: 200px;
+	display: block;
+}
+
+.boxLeft {
+	text-align: center;
+}
+
+.boxRight {
+	margin-left: 3%;
+}
+
+.boxRight p a {
+	color: black;
+	text-decoration: none;
+}
+
+.boxRight p a:hover {
+	text-decoration: underline;
+}
+
+
+/* site: new post */
+.blogPostTop {
+	width: 100%;
+	text-align: center;
+}
+
+.blogPostContainer {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.blogPost {
+	margin-top: 5%;
+	margin-left: 20%;
+	margin-bottom: 2%;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 1%;
+	padding-bottom: 40%;
+	width: 60%;
+	height: 100%;
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	align-items: center;
+}
+
+.blogPost input{
+	width: 100%;
+	display: block;
+	border-radius: 5px;	
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	padding: 0.5% 0;
+	font-size: 16px;
+}
+
+.blogPost textarea{
+	width: 100%;
+	display: block;
+	border-radius: 5px;	
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	padding-bottom: 30%;
+	overflow: auto;
+	-ms-overflow-style: none; 
+	font-size: 16px;
+}
+
+.blogPost label{
+	margin-top: 3%;
+	display: block;
+}
+
+.submitBtn {
+	border: 5px solid black;
+	background-color: white;
+	border-radius: 10px;
+	margin-top: 2%;
+	padding: 2%;
+	font-size: 20px;
+}
+
+.blogPost input:focus {
+	outline: none;
+}
+
+.blogPost textarea:focus {
+	outline: none;
+}
+
+.blogPost h2 {
+	text-align: center;
+}
+
+.blogPost img {
+	display: block;
+	width: 300px;
+	height: 300px;
+	margin-left: 35%;
+}
+
+.blogPost span {
+	margin-left: 42.5%;
+}
+
+.blogPost p {
+	width: 60%;
+	padding-bottom: 20%;
+	margin-left: 20%;
+	overflow: auto;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	-ms-overflow-style: none; 
+}
+
+.deleteBtn {
+	display: inline;
+}
+
+.buttonBox form button {
+	background-color: white;
+	color: red;
+	border: 3px solid red;
+	border-radius: 5px;
+	font-size: 15px;
+	padding: 2% 5%;
+}
+
+.buttonBox form button:hover {
+	cursor: pointer;
+}
+
+.buttonBox a {
+	background-color: white;
+	color: green;
+	border: 3px solid green;
+	border-radius: 5px;
+	font-size: 15px;
+	padding: 2% 5%;
+	text-decoration: none;
+	margin-left: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

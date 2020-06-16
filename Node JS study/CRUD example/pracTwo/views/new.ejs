@@ -1,0 +1,38 @@
+<%- include("partials/header") %>
+
+
+
+<div class="blogPostContainer">
+	<div class="blogPost">
+		<div class="blogPostTop">
+			<h1>
+				Add New Post Here!
+			</h1>
+		</div>	
+		<form action="/blogs" method="POST">
+			<div class="blogPostBox">
+				<label>Title
+					<input class="title" type="text" name="blog[title]" placeholder="title">
+				</label>
+			</div>
+			<div class="blogPostBox">
+				<label>Image
+					<input class="image" type="text" name="blog[image]" placeholder="image ulr">
+				</label>
+			</div>
+			<div class="blogPostBox">
+				<label>Blog Content
+					<textarea class="body" name="blog[body]" ></textarea>
+				</label>
+			</div>
+			<div class="blogPostBox">
+				<button class="submitBtn">
+					Submit
+				</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+
+<%- include("partials/footer") %>
